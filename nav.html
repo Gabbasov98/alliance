@@ -53,9 +53,9 @@
 
 
 
-        <!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
-        <!--            Быстрый заказ-->
-        <!--        </button>-->
+        <button data-modal="successModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            запрос отправлен!
+        </button>
     </div>
 
 
@@ -64,16 +64,21 @@
 
 
 
-    <div class="modal" id="Modal">
+    <div class="modal" id="successModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 8L8 24M8 8L24 24" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
             <div class="modal__top">
-                <div class="text32 medium-text">
-                    Title
+                <div class="text32 text20-mob bold-text">
+                    Cпасибо ваш запрос отправлен!
                 </div>
-                <button class="close-btn _close-modal">
-                    <img src="img/close.svg" alt="">
-                </button>
+                <div class="modal__desc text20 text14-mob">
+                    Менеджер перезвонит через 10 минут
+                </div>
             </div>
         </div>
     </div>
